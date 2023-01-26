@@ -20,3 +20,12 @@ function getGender(){
         return result02.innerHTML = 'Result: Other gender'
     }
 }
+
+function getVowels(){
+    letter = document.getElementById('txt3').value
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    for (let letter in vowels){
+        console.log(letter)
+    }
+}
+getVowels()
