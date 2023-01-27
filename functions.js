@@ -22,10 +22,17 @@ function getGender(){
 }
 
 function getVowels(){
-    letter = document.getElementById('txt3').value
+    let letter = document.getElementById('txt3').value.toLowerCase()
+    let result03 = document.getElementById('result03').value
     vowels = ['a', 'e', 'i', 'o', 'u']
-    for (let letter in vowels){
-        console.log(letter)
+    for (let i=0; i<vowels.length;i+=1){
+        if(letter == vowels[i]){
+            result03.innerHTML = "Essa é uma vogal"
+        } else if (letter == ''){
+            alert('Digite uma letra!')
+        } else {
+            result03.innerHTML = "Essa é uma consoante"
+        }
     }
-}
-getVowels()
+
+}    

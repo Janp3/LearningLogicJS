@@ -1,14 +1,17 @@
-// still not working
+// functions works but not the frontend
 function getVowels(){
-    letter = document.getElementById('txt3').value.toLowerCase()
-    let result03 = document.getElementsByName(result03)
+    let letter = document.getElementById('txt3').value.toLowerCase()
+    let result03 = document.getElementById('result03')
     vowels = ['a', 'e', 'i', 'o', 'u']
-    for (let i; i < vowels.length; i++){
-        if (letter[0] == vowels[i]){
-            return result03.innerText = 'Sim é uma vogal'
+    for (let i=0; i<vowels.length;i+=1){
+        if(letter == vowels[i]){
+            return result03.innerHTML = "Essa é uma vogal"
+        } else if (letter == ''){
+            return alert('Digite uma letra!')
         } else {
-            return result03.innerText = 'Essa é uma consoante'
+            return result03.innerHTML = "Essa é uma consoante"
         }
+        console.log(letter, vowels[i])
     }
-}
-getVowels()
+
+}    
