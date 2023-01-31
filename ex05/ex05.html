@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 05</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        button{
+            display: block;
+            margin-top: 20px;
+        }
+        input{
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>First type your product then the price</h1>
+    <div>
+        <h2>Product 1</h2>
+
+        <input type="number" placeholder="price product 1" id="product1">
+        <h2>Product 2</h2>
+
+        <input type="number"  placeholder="price product 2" id="product2">
+
+        <h2>Product 3</h2>
+        <input type="number" placeholder="price product 3" id="product3">
+        <button type="button" onclick="getProduct()">See product</button>
+        <br>
+        <h2 id="result05">waiting...</h2>
+    </div>
+
+
+    <script src="ex05.js"></script>
+</body>
+</html>
